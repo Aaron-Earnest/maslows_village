@@ -8,6 +8,14 @@ eleventyNavigation:
 
 <img class="home_banner" src="/assets/images/neil-wallace-dNfaDhHRWc8-unsplash-copy.jpg" alt="Two small candy houses on rocks">
 
-<h1>Helping Our Community</h1>
+Homepage
 
-lkasdjf;lskajf;lskajf
+Your homepage should quickly tell visitors:
+
+Who you are
+
+What problem you’re solving
+
+Who benefits
+
+How someone can get involved

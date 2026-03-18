@@ -5,3 +5,11 @@ eleventyNavigation:
   key: Updates
   order: 8
 ---
+
+Building stages
+
+Community stories
+
+Project updates
+
+Behindthescenes work
