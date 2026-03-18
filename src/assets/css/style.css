@@ -3,12 +3,28 @@
     max-width: 15em;
     height: auto;
 }
-header ul {
-    display: flex;
-    justify-content: space-around;
+a {
+    text-decoration: none;
 }
-header li{
-    flex-direction: column;
+.navbar {
+    display: flex;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: #F1D1CB;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.navbar li{
+    font-weight: bolder;
+    font-size: x-large;
     list-style: none;
     color: #A5348A;
 }
