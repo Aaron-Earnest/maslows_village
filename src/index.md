@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Home Page
+title: Home
 eleventyNavigation:
   key: Home
   order: 1
