@@ -28,9 +28,15 @@ a {
     list-style: none;
     color: #A5348A;
 }
-body {
+.site_wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #F1D1CB;
     margin: 0;
+}
+.site_content {
+    flex: 1;
 }
 .home_banner {
     max-width: 100%;
