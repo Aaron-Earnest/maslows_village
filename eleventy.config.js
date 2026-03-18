@@ -2,6 +2,7 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPlugin(HtmlBasePlugin);
     // Automatically optimizes every <img> and <picture> tag on the site
     eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     // Handles hierarchical menus and breadcrumbs for the pages
@@ -13,6 +14,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets/css");
 
     return {
+        // Set teh pathPrefix to my exact repository name
+        pathPrefix: "/maslows_village/",
         dir: {
             input: "src",           // Where you work
             output: "public",         // Where the final site is built

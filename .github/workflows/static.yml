@@ -40,7 +40,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npx @11ty/eleventy
+          npx @11ty/eleventy --pathprefix=/maslows_village/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
