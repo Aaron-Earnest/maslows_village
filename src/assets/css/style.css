@@ -1,9 +1,30 @@
+.site_logo {
+    padding: 1em 0 0 1em;
+    max-width: 15em;
+    height: auto;
+}
+header ul {
+    display: flex;
+    justify-content: space-around;
+}
 header li{
-    color: purple;
+    flex-direction: column;
+    list-style: none;
+    color: #A5348A;
 }
 body {
-    background-color: pink;
+    background-color: #F1D1CB;
+    margin: 0;
+}
+.home_banner {
+    max-width: 100%;
+    height: auto;
 }
 footer {
-    background-color: green;
+    background-color: #51893F;
+}
+.united_way_logo {
+    margin: 1em 0 0 1em;
+    max-width: 15em;
+    height: auto;
 }
