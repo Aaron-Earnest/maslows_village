@@ -1,9 +1,10 @@
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy"); // Extract the plugin
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPlugin(HtmlBasePlugin);
+    // Use the correctly named plugin here
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
     // Automatically optimizes every <img> and <picture> tag on the site
     eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     // Handles hierarchical menus and breadcrumbs for the pages
