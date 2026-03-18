@@ -8,6 +8,10 @@
     </head>
     <body>
         {% include "partials/header.njk" %}
+        <div class="navbar">
+            {% include "partials/nav.njk" %}
+        </div>
+    
 
         <main>
             {{ content | safe }}
