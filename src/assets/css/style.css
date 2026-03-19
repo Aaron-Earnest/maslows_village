@@ -61,3 +61,53 @@ footer {
     max-width: 15em;
     height: auto;
 }
+/* Hide the checkbox and toggle button on desktop */
+.nav-toggle, .nav-toggle-label {
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        cursor: pointer;
+    }
+
+    /* Create the three bars icon */
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: #A5348A;
+        height: 3px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 7px;
+    }
+    .nav-toggle-label span::after {
+        top: 7px;
+    }
+
+    /* Hide the menu by default on mobile*/
+    .site-nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #F1D1CB;
+        width: 100%;
+    }
+
+    /* The Toggle Effect: Show menu when checkbox is checked */
+    .nav-toggle:checked ~ ul {
+        display: flex;
+    }
+}

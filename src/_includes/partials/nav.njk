@@ -1,4 +1,12 @@
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main Navigation">
+
+        <!-- The checkbox is hidden and acts as a toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <!-- The label is what the user actually clicks -->
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
         <ul>
             {%- for entry in collections.all | eleventyNavigation -%}
             <li{% if entry.url == page.url %} class="active" aria-current="page"{% endif %}>
