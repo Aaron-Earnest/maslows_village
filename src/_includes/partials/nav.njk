@@ -1,11 +1,9 @@
     <nav class="site-nav" aria-label="Main Navigation">
 
-        <!-- The checkbox is hidden and acts as a toggle -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <!-- The label is what the user actually clicks -->
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
+        <!-- Screen readers will hear "Menu, collapsed, button" -->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
 
         <ul>
             {%- for entry in collections.all | eleventyNavigation -%}

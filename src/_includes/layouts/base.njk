@@ -17,5 +17,15 @@
         </main>
 
         {% include "partials/footer.njk" %}
+        <script>
+            const nav = document.querySelector('.site-nav');
+            const btn = document.querySelector('.nav-toggle');
+
+            btn.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('is-open');
+                // Update the aria label so screen readers know the state
+                btn.setAttribute('aria-expanded', isOpen);
+            });
+        </script>
     </body>
 </html>

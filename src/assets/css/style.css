@@ -62,52 +62,53 @@ footer {
     height: auto;
 }
 /* Hide the checkbox and toggle button on desktop */
-.nav-toggle, .nav-toggle-label {
+.nav-toggle {
     display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
 }
 @media (max-width: 768px) {
-    .nav-toggle-label {
-        display: flex;
-        align-items: center;
-        padding: 1em;
-        cursor: pointer;
-    }
-
-    /* Create the three bars icon */
-    .nav-toggle-label span,
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after {
+    .nav-toggle {
         display: block;
-        background: #A5348A;
-        height: 3px;
-        width: 2em;
-        border-radius: 2px;
-        position: relative;
     }
 
-    .nav-toggle-label span::before,
-    .nav-toggle-label span::after {
-        content: '';
-        position: absolute;
-    }
-
-    .nav-toggle-label span::before {
-        bottom: 7px;
-    }
-    .nav-toggle-label span::after {
-        top: 7px;
-    }
-
-    /* Hide the menu by default on mobile*/
     .site-nav ul {
-        display: none;
+        display: none; /* Hideen by default */
         flex-direction: column;
-        background-color: #F1D1CB;
         width: 100%;
     }
 
-    /* The Toggle Effect: Show menu when checkbox is checked */
-    .nav-toggle:checked ~ ul {
+    /* When the JS adds this class, the menu shows up */
+    .site-nav.is-open ul {
         display: flex;
     }
+
+    /* Accessibility: Visual indicator for keyboard focus */
+    .nav-toggle:focus {
+        outline: 3px solid #A5348A;
+        outline-offset: 2px;
+    }
+}
+
+/* Hamburger Icon bars */
+.hamburger, .hamburger::before, .hamburger::after {
+    display: block;
+    background: #A5348A;
+    height: 3px;
+    width: 2px;
+    border-radius: 2px;
+    position: relative;
+    transition: trasform 0.3s;
+}
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+}
+.hamburger::before {
+    top: -8px;
+}
+.hamburger::after {
+    bottom: -8px;
 }
