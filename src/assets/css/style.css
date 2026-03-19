@@ -5,6 +5,8 @@
 }
 .site-nav {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: sticky;
     width: 100%;
     top: 0;
@@ -72,12 +74,22 @@ footer {
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
+        margin-left: .25em;
+        order: 1;
+        max-height: 30px;
+        margin-bottom: 1em;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
 
     .site-nav ul {
-        display: none; /* Hideen by default */
-        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 100%;    /* Sits directly under the nav bar */
+        left: 0;
         width: 100%;
+        flex-direction: column;
+        background: #F1D1CB;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
 
     /* When the JS adds this class, the menu shows up */
@@ -89,6 +101,7 @@ footer {
     .nav-toggle:focus {
         outline: 3px solid #A5348A;
         outline-offset: 2px;
+        border-radius: .25em;
     }
 }
 
@@ -97,7 +110,7 @@ footer {
     display: block;
     background: #A5348A;
     height: 3px;
-    width: 2px;
+    width: 20px;
     border-radius: 2px;
     position: relative;
     transition: trasform 0.3s;
