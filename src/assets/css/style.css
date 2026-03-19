@@ -1,4 +1,7 @@
-.site_logo {
+body {
+    overflow: hidden;
+}
+.site-logo {
     padding: 1em 0 0 1em;
     max-width: 15em;
     height: auto;
@@ -28,24 +31,24 @@ a {
     list-style: none;
     color: #A5348A;
 }
-.site_wrapper {
+.site-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-color: #F1D1CB;
     margin: 0;
 }
-.site_content {
+.site-content {
     flex: 1;
 }
-.home_banner {
+.home-banner {
     max-width: 100%;
     height: auto;
 }
 footer {
     background-color: #51893F;
 }
-.united_way_logo {
+.united-way-logo {
     margin: 1em 0 0 1em;
     max-width: 15em;
     height: auto;
