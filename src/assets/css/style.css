@@ -63,6 +63,10 @@ footer {
     max-width: 15em;
     height: auto;
 }
+.facebook-logo {
+    max-width: 32px;
+    height: auto;
+}
 /* Hide the checkbox and toggle button on desktop */
 .nav-toggle {
     display: none;
