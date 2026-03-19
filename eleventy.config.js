@@ -12,8 +12,9 @@ module.exports = function(eleventyConfig) {
 
     // Copies these folders exactly as they are to the final 'public' folder
     eleventyConfig.addPassthroughCopy("src/assets/documents"); // Your fillable PDFs
-    eleventyConfig.addPassthroughCopy("src/assets/static");    // Favicon, robots.txt
+    eleventyConfig.addPassthroughCopy({"src/assets/static": "/"});    // Favicon, robots.txt
     eleventyConfig.addPassthroughCopy("src/assets/css");
+    eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
 
     return {
         // Set teh pathPrefix to my exact repository name

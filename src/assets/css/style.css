@@ -3,18 +3,16 @@
     max-width: 15em;
     height: auto;
 }
-a {
-    text-decoration: none;
-}
-.navbar {
+.site-nav {
     display: flex;
     position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
     background: #F1D1CB;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.navbar ul{
+.site-nav ul{
     display: flex;
     justify-content: space-evenly;
     gap: 2em;
@@ -22,11 +20,23 @@ a {
     margin: 0;
     width: 100%;
 }
-.navbar li{
+.site-nav li{
     font-weight: bolder;
     font-size: x-large;
     list-style: none;
     color: #A5348A;
+}
+.site-nav a {
+    text-decoration: none;
+    color: #A5348A;
+}
+.site-nav a:hover {
+    text-decoration: underline;
+}
+.site-nav li.active a {
+    border-radius: .25em;
+    background-color: #A5348A;
+    color: #F1D1CB;
 }
 .site-wrapper {
     display: flex;
@@ -44,6 +54,7 @@ a {
 }
 footer {
     background-color: #51893F;
+    color: #F1D1CB;
 }
 .united-way-logo {
     margin: 1em 0 0 1em;

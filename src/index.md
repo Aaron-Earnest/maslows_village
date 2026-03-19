@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: Home
 eleventyNavigation:
   key: Home
+  url: /
   order: 1
 ---
 
